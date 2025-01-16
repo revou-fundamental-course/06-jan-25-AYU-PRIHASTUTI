@@ -1,14 +1,14 @@
+//Welcome Speech
 function welcome(){
     const user = document.getElementById("user-name").value;
     if (user.trim =="") {
-        alert("Mohon isi nama anda!");
+        alert("Tolong isi nama anda!");
     } else {
         document.getElementById("user").textContent = user;
     }
 }
 
-
-
+// form validation
 function formValidation(){
     const nama = document.getElementById("name-input").value;
     const tanggalLahir = document.getElementById("date").value;
@@ -33,6 +33,7 @@ function formValidation(){
     }
 };
 
+// banner auto slide
 let indexBanner = 0;
 
 function nextSlide(){
